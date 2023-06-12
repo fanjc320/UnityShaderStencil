@@ -21,7 +21,7 @@
         };
         void surf (Input IN, inout SurfaceOutput o) {
             o.Albedo = _Color.rgb;
-            o.Normal = half3(0,0,-1);
+            o.Normal = half3(0,0,-1); //法线向内，注意阴影是和普通物体方向相反的
             o.Alpha = 1;
         }
         ENDCG
